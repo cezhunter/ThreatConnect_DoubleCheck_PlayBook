@@ -1,0 +1,14 @@
+{
+  "definitionVersion" : "1.0.0",
+  "name" : "[cvahid] ThreatConnect DoubleCheck",
+  "type" : "Standard",
+  "panX" : 20.0,
+  "panY" : 20.0,
+  "logLevel" : "WARN",
+  "description" : "A playbook that verifies groups and indicators based on user preferences.",
+  "jobList" : [ ],
+  "playbookConnectionList" : [ ],
+  "playbookTriggerList" : [ ],
+  "exportablePipes" : [ ],
+  "dateExported" : "5/24/18 3:07 PM"
+}
