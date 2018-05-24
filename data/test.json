@@ -1,0 +1,69 @@
+{
+    "settings":
+    {
+        "attributes": {
+            "required": [{
+                    "type": "Source",
+                    "value": "threatconnect.com",
+                    "regex": false
+                },
+                {
+                    "type": "Description",
+                    "value": "",
+                    "regex": false 
+                }
+                {
+                    "type": "Additional Analysis and Context",
+                    "value": "[a-zA-Z]*",
+                    "regex": true
+                }
+            ],
+            "desired": [{
+                    "type": "File Type",
+                    "value": "",
+                    "regex": false
+                },
+                {
+                    "type": "AV Scanner Results",
+                    "value": "",
+                    "regex": false 
+                }
+            ],
+            "failOnDuplicates": true,
+            "minNumberOfAttributes": 3,
+            "maxNumberOfAttributes": 10
+        },
+        "associations":{
+            "required": [{
+                    "type": "Document",
+                    "count": 2
+                },
+                {
+                    "type": "File",
+                    "count": 0
+                },
+                {
+                    "type": "Host",
+                    "count": -1
+                }
+            ],
+            "desired":[{
+                    "type": "Adversary",
+                    "count": 1
+                },
+                {
+                    "type": "Url",
+                    "count": 2
+                },
+                {
+                    "type": "Email",
+                    "count": -1
+                }
+            ]
+        },
+        "tags":{
+            "required":["bad", "apt"],
+            "desired": ["malware"]
+        }
+    }
+}
