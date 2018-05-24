@@ -1,6 +1,5 @@
 {
-    "settings":
-    {
+    "settings": {
         "attributes": {
             "required": [{
                     "type": "Source",
@@ -10,8 +9,8 @@
                 {
                     "type": "Description",
                     "value": "",
-                    "regex": false 
-                }
+                    "regex": false
+                },
                 {
                     "type": "Additional Analysis and Context",
                     "value": "[a-zA-Z]*",
@@ -26,14 +25,14 @@
                 {
                     "type": "AV Scanner Results",
                     "value": "",
-                    "regex": false 
+                    "regex": false
                 }
             ],
             "failOnDuplicates": true,
             "minNumberOfAttributes": 3,
             "maxNumberOfAttributes": 10
         },
-        "associations":{
+        "associations": {
             "required": [{
                     "type": "Document",
                     "count": 2
@@ -47,7 +46,7 @@
                     "count": -1
                 }
             ],
-            "desired":[{
+            "desired": [{
                     "type": "Adversary",
                     "count": 1
                 },
@@ -61,8 +60,8 @@
                 }
             ]
         },
-        "tags":{
-            "required":["bad", "apt"],
+        "tags": {
+            "required": ["bad", "apt"],
             "desired": ["malware"]
         }
     }
